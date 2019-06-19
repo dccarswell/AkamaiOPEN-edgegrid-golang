@@ -1,7 +1,9 @@
 package dnsv2
 
 import (
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid"
+	//"akamai/edgegrid"
 )
 
 var (

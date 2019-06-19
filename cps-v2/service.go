@@ -6,8 +6,12 @@ import (
 	"log"
 	"net/http"
 
-	client "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	client "github.com/dccarswell/AkamaiOPEN-edgegrid-golang/client-v1"
+	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	client "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	client "akamai/client-v1"
+//	"akamai/edgegrid"
 )
 
 var (

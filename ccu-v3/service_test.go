@@ -3,7 +3,9 @@ package ccu
 import (
 	"testing"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid"
+	//"akamai/edgegrid"
 	"github.com/stretchr/testify/assert"
 )
 

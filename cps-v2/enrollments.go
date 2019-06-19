@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	client "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	client "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+	client "github.com/dccarswell/AkamaiOPEN-edgegrid-golang/client-v1"
+	//client "akamai/client-v1"
 )
 
 // Enrollments represents an enrollment

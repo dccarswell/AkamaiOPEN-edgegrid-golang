@@ -3,7 +3,9 @@ package papi
 import (
 	"fmt"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"akamai/client-v1"
 )
 
 // Hostnames is a collection of Property Hostnames

@@ -21,6 +21,12 @@ import (
 
 const defaultSection = "DEFAULT"
 
+// Constants for time cheat DCC
+const akamaiTimeURL = `http://time.akamai.com/?iso`
+const akamaiTimeFmt = `2006-01-02T15:04:05Z`
+
+
+
 // AddRequestHeader sets the Authorization header to use Akamai Open API
 func AddRequestHeader(config Config, req *http.Request) *http.Request {
 	if config.Debug {
@@ -59,9 +65,32 @@ func AddRequestHeader(config Config, req *http.Request) *http.Request {
 
 // Must be assigned the UTC time when the request is signed.
 // Format of “yyyyMMddTHH:mm:ss+0000”
+/*
 func makeEdgeTimeStamp() string {
 	local := time.FixedZone("GMT", 0)
 	t := time.Now().In(local)
+	return fmt.Sprintf("%d%02d%02dT%02d:%02d:%02d+0000",
+		t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), t.Second())
+}
+*/
+func makeEdgeTimeStamp() string {
+	log.Debugln("Fetching Time From Akamai (ntp cheat)")
+	resp,err := http.Get(akamaiTimeURL)
+	defer resp.Body.Close()
+	if err != nil {
+		panic(err)
+	}
+	body,err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		panic(err)
+	}
+	t,err := time.Parse(akamaiTimeFmt,string(body))
+	if err != nil {
+		log.Debugln("Fetching time from Akamai failed - falling back to RTC")
+		t = time.Now().In(time.FixedZone("GMT",0))
+		panic(err) // really, ought to do something here, since this is possible ... perhaps grab local time?
+	}
+	t = t.In(time.FixedZone("GMT",0))
 	return fmt.Sprintf("%d%02d%02dT%02d:%02d:%02d+0000",
 		t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), t.Second())
 }
