@@ -3,13 +3,10 @@ package apiendpoints
 import (
 	"net/http"
 
+
 	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/client-v1"
 	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid"
-//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
-//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
-//	"akamai/client-v1"
-//	"akamai/edgegrid"
-)
+
 
 var (
 	// Config contains the Akamai OPEN Edgegrid API credentials

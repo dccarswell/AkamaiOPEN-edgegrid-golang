@@ -1,10 +1,8 @@
 package ccu
 
 import (
-//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
-//	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid"
-//	"akamai/edgegrid"
-)
+	
+	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid")
 
 var (
 	// Config contains the Akamai OPEN Edgegrid API credentials

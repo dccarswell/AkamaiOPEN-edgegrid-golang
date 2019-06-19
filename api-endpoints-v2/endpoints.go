@@ -4,10 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	//"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
-	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/client-v1"
-	//"akamai/client-v1"
-	"github.com/google/go-querystring/query"
+	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/client-v1"	"github.com/google/go-querystring/query"
 )
 
 type Endpoints []Endpoint

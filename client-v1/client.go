@@ -4,6 +4,7 @@ package client
 import (
 	"bytes"
 	"errors"
+
 	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/edgegrid"
 	"github.com/dccarswell/AkamaiOPEN-edgegrid-golang/jsonhooks-v1"
 //	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
