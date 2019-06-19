@@ -1,7 +1,8 @@
 package dns
 
 import (
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	"akamai/edgegrid"
 )
 
 var (

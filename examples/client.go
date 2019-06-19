@@ -8,8 +8,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	"akamai/client-v1"
+	"akamai/edgegrid"
 )
 
 func random(min int, max int) int {

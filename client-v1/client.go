@@ -4,8 +4,10 @@ package client
 import (
 	"bytes"
 	"errors"
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/jsonhooks-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/jsonhooks-v1"
+	"akamai/edgegrid"
+	"akamai/jsonhooks-v1"
 	"io"
 	"io/ioutil"
 	"mime/multipart"
@@ -15,6 +17,8 @@ import (
 	"path/filepath"
 	"runtime"
 	"strings"
+
+//	"fmt"
 )
 
 var (
@@ -28,6 +32,7 @@ var (
 // NewRequest creates an HTTP request that can be sent to Akamai APIs. A relative URL can be provided in path, which will be resolved to the
 // Host specified in Config. If body is specified, it will be sent as the request body.
 func NewRequest(config edgegrid.Config, method, path string, body io.Reader) (*http.Request, error) {
+//fmt.Printf("%s %s %s",config.ClientToken,method,path)
 	var (
 		baseURL *url.URL
 		err     error
@@ -140,6 +145,7 @@ func BodyJSON(r *http.Response, data interface{}) error {
 	}
 
 	body, err := ioutil.ReadAll(r.Body)
+//fmt.Println(string(body))
 	if err != nil {
 		return err
 	}

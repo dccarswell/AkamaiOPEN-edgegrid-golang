@@ -5,7 +5,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	"akamai/edgegrid"
 )
 
 func main() {

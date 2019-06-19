@@ -6,7 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/jsonhooks-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/jsonhooks-v1"
+	"akamai/jsonhooks-v1"
 )
 
 // APIError exposes an Akamai OPEN Edgegrid Error

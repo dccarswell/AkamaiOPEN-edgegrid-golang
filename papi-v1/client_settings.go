@@ -1,6 +1,7 @@
 package papi
 
-import "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//import "github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+import "akamai/client-v1"
 
 // ClientSettings represents the PAPI client settings resource
 type ClientSettings struct {

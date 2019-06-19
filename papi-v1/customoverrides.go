@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+	"akamai/client-v1"
 )
 
 // CustomOverrides represents a collection of Custom Overrides

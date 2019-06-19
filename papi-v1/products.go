@@ -3,7 +3,8 @@ package papi
 import (
 	"fmt"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+	"akamai/client-v1"
 )
 
 // Products represents a collection of products

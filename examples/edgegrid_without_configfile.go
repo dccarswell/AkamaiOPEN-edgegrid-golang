@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/edgegrid"
+	"akamai/edgegrid"
 	"io/ioutil"
 	"net/http"
 )

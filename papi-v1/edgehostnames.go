@@ -7,7 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+//	"github.com/akamai/AkamaiOPEN-edgegrid-golang/client-v1"
+	"akamai/client-v1"
 )
 
 // EdgeHostnames is a collection for PAPI Edge Hostname resources
